@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "b03f3c3c-9ade-4b0b-94f2-0f74ebf8aa63",
+		"name": "Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29027861"
+	},
+	"item": [
+		{
+			"name": "Register_products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n        \"code\": \"465372\",\r\n        \"name\": \"iPhone 15\",\r\n        \"description\": \"8 de Ram, 256 gb\",\r\n        \"id_supplier\": \"12345\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/register_products",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register_products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit_products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"code\": \"98758\",\r\n        \"name\": \"Celular Samsung z flip\",\r\n        \"description\": \"12 gb ram, 256 gb\",\r\n        \"id_supplier\": \"12345\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/edit_product",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"edit_product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/search_products",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"search_products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search_one",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/search/98758",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"search",
+						"98758"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_one",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"98758\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_all",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/delete_all",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delete_all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
